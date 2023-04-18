@@ -2,16 +2,22 @@
     "name": "leo98barros/base-repository-service",
     "description": "Basic code with examples for implementing service and repository pattern",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Src\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "leo98barros",
             "email": "leonardo98barros@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "php-di/php-di": "^7.0"
+    },
+    "scripts": {
+        "serve": "@php -S localhost:8000/index.php"
+    }
 }

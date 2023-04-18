@@ -1,13 +1,13 @@
 <?php
 
-require __DIR__.'/vendor/autoload.php';
+use Src\Controllers\Controller;
 
-use Src\Repositories\Example\ExampleRepository;
+$container = require __DIR__ . '/src/App/bootstrap.php';
 
-$model = (object) ['name' => 'name example'];
+echo "--- Controller::index <br>";
+$container->call([Controller::class, 'index']);
 
-$example = new ExampleRepository($model);
+echo "<br><br>";
 
-echo '<pre>';
-    var_export($example);
-echo '</pre>';
+echo "--- Controller::store <br>";
+$container->call([Controller::class, 'store']);
