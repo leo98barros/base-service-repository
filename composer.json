@@ -1,0 +1,17 @@
+{
+    "name": "leo98barros/base-repository-service",
+    "description": "Basic code with examples for implementing service and repository pattern",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Leo98barros\\BaseRepositoryService\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "leo98barros",
+            "email": "leonardo98barros@gmail.com"
+        }
+    ],
+    "require": {}
+}
